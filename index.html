@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta_title">Gagas Logistik Indonesia</title>
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="#services" data-i18n="nav.services">Layanan</a>
+    <a href="#pricing" data-i18n="nav.pricing">Biaya</a>
+    <a href="#halal" data-i18n="nav.halal">Komitmen Halal</a>
+    <a href="#about" data-i18n="nav.about">Visi &amp; Misi</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <div class="mobile-cta-wrap">
+      <a href="#contact" class="mobile-cta btn-primary" data-i18n="nav.contact_us">Hubungi Kami</a>
+      <button type="button" class="lang-toggle-btn lang-toggle-mobile" aria-label="Ganti bahasa">
+        <span class="lang-text">ID</span>
+        <span class="lang-flag">
+          <svg width="20" height="20" viewBox="0 0 24 24" class="flag-icon" style="border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); box-sizing: border-box;">
+            <rect width="24" height="12" fill="#CE1126" />
+            <rect y="12" width="24" height="12" fill="#FFFFFF" />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ── 1. NAV ── -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Gagas<span> Logistik</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="#services" data-i18n="nav.services">Layanan</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Biaya</a></li>
+        <li><a href="#halal" data-i18n="nav.halal">Komitmen Halal</a></li>
+        <li><a href="#about" data-i18n="nav.about">Visi &amp; Misi</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="btn-primary" data-i18n="nav.contact_us">Hubungi Kami</a>
+        <button type="button" class="lang-toggle-btn" id="langToggleBtn" aria-label="Ganti bahasa">
+          <span class="lang-text">ID</span>
+          <span class="lang-flag">
+            <svg width="19" height="19" viewBox="0 0 24 24" class="flag-icon" style="border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); box-sizing: border-box;">
+              <rect width="24" height="12" fill="#CE1126" />
+              <rect y="12" width="24" height="12" fill="#FFFFFF" />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="nav-mobile-actions">
+        <button type="button" class="lang-toggle-btn lang-toggle-nav-mobile" aria-label="Ganti bahasa">
+          <span class="lang-text">ID</span>
+          <span class="lang-flag">
+            <svg width="19" height="19" viewBox="0 0 24 24" class="flag-icon" style="border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); box-sizing: border-box;">
+              <rect width="24" height="12" fill="#CE1126" />
+              <rect y="12" width="24" height="12" fill="#FFFFFF" />
+            </svg>
+          </span>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── 2. HERO ── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <div class="hero-badge-dot" style="background:#16A34A">✓</div>
+            <span data-i18n-html="hero.badge">Standar Layanan Unggul · <strong>Manajemen Logistik &amp; Armada Terpercaya</strong></span>
+          </div>
+          <h1 class="hero-title reveal reveal-delay-1" data-i18n-html="hero.title">
+            Transportasi Darat &amp; Logistik,<br><em>Unggul, Aman &amp; Berintegritas Tinggi.</em>
+          </h1>
+          <p class="hero-sub reveal reveal-delay-2" data-i18n="hero.sub">
+            PT. Gagas Logistik Indonesia memadukan eksekusi transportasi dan manajemen armada modern dengan standar operasional terbaik, presisi, dan terpercaya.
+          </p>
+          <div class="hero-cta reveal reveal-delay-3">
+            <a href="#contact" class="btn-primary" data-i18n="hero.cta_contact">Hubungi Kami</a>
+            <a href="#services" class="btn-ghost" data-i18n="hero.cta_services">Lihat Layanan</a>
+          </div>
+          <div class="hero-trust reveal reveal-delay-4">
+            <div class="trust-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <span data-i18n="hero.trust_1">Standar Layanan Unggul</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <span data-i18n="hero.trust_2">99.8% Ketepatan Waktu SLA</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-2">
+          <div class="hero-dashboard">
+            <div class="dashboard-bar">
+              <div class="db-dot"></div><div class="db-dot"></div><div class="db-dot"></div>
+            </div>
+            <div class="dashboard-body">
+              <div class="db-header">
+                <div class="db-title" data-i18n="hero.db_title">Pusat Kendali Operasional</div>
+                <div class="db-tag" style="background:rgba(34,197,94,0.15);color:#16A34A;font-weight:700" data-i18n="hero.db_tag">Aktif Real-Time</div>
+              </div>
+              <div class="db-chart">
+                <div class="db-bar" style="height:45%"></div>
+                <div class="db-bar" style="height:65%"></div>
+                <div class="db-bar" style="height:55%"></div>
+                <div class="db-bar active" style="height:85%"></div>
+                <div class="db-bar" style="height:70%"></div>
+                <div class="db-bar active" style="height:95%"></div>
+                <div class="db-bar" style="height:80%"></div>
+                <div class="db-bar active" style="height:98%"></div>
+              </div>
+              <div class="db-stats">
+                <div class="db-stat">
+                  <div class="db-stat-val">100<span style="font-size:.9rem;color:#16A34A">%</span></div>
+                  <div class="db-stat-label" data-i18n="hero.stat_1_label">Kepatuhan Standar Armada</div>
+                  <div class="db-stat-change" style="color:#16A34A">Terverifikasi</div>
+                </div>
+                <div class="db-stat">
+                  <div class="db-stat-val">Live</div>
+                  <div class="db-stat-label" data-i18n="hero.stat_2_label">Pemantauan Armada Live</div>
+                  <div class="db-stat-change">+Suhu Terjaga</div>
+                </div>
+                <div class="db-stat">
+                  <div class="db-stat-val">99.8<span style="font-size:.9rem;color:var(--accent)">%</span></div>
+                  <div class="db-stat-label" data-i18n="hero.stat_3_label">On-Time Delivery SLA</div>
+                  <div class="db-stat-change">+Aman &amp; Cepat</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-badge">
+            <div class="float-badge-icon" style="background:#16A34A">✓</div>
+            <div class="float-badge-text">
+              <strong data-i18n="hero.float_badge_1_title">Sensor Suhu &amp; Armada</strong>
+              <span data-i18n="hero.float_badge_1_sub">Rute terkontrol · real-time</span>
+            </div>
+          </div>
+          <div class="hero-float-badge-2">
+            <div class="float-badge-2-val">Pusat Kendali</div>
+            <div class="float-badge-2-label" data-i18n="hero.float_badge_2_label">Telematika &amp; Kontrol Rute</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3. LOGO TICKER ── -->
+  <div class="ticker-section">
+    <div class="ticker-label" data-i18n-html="ticker.label">Dipercaya oleh berbagai perusahaan &amp; mitra terkemuka</div>
+    <div class="ticker-track-wrap">
+      <div class="ticker-track">
+        <!-- Set 1 -->
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>Nexaflow</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>Meridian</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12,2 22,20 2,20"/></svg></div>Vanta Labs</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 4h16v12H4z M8 20h8"/></svg></div>Pulsar HQ</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>Arclight</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>Korova Co.</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>Stratum IO</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>Lumiq</div>
+        <div class="ticker-dot"></div>
+        <!-- Set 2 (duplicate for seamless loop) -->
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>Nexaflow</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>Meridian</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12,2 22,20 2,20"/></svg></div>Vanta Labs</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 4h16v12H4z M8 20h8"/></svg></div>Pulsar HQ</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>Arclight</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>Korova Co.</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>Stratum IO</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>Lumiq</div>
+        <div class="ticker-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 3. SERVICES CAROUSEL ── -->
+  <span id="screens" style="display:block;position:relative;top:-80px;visibility:hidden;"></span>
+  <section class="carousel-section" id="services">
+    <div class="container">
+      <div class="carousel-header">
+        <div class="section-label reveal" data-i18n="services.label">Layanan</div>
+        <h2 class="section-title reveal reveal-delay-1" data-i18n-html="services.title">Armada &amp; Layanan Logistik,<br><em>siap mengirim kargo Anda</em></h2>
+        <p class="section-sub reveal reveal-delay-2" data-i18n="services.sub">Pilihan armada logistik lengkap dan terpercaya dari Gagas Logistik — melayani pengiriman kargo ringan, muatan berat, hingga rantai dingin (cold chain).</p>
+      </div>
+    </div>
+
+
+    <div class="carousel-stage" id="carouselStage">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- Service cards: 4 fleet cards (light, medium, heavy, cold) -->
+
+        <!-- 0: Light -->
+        <div class="phone-card" data-pos="center" data-index="0">
+          <div class="phone-shell service-box">
+            <div class="svc-box-img">
+              <img src="images/light.png" alt="Light Truck" loading="lazy" />
+            </div>
+            <div class="svc-box-body">
+              <h3 class="svc-box-title" data-i18n="services.card_0_title">Light Truck</h3>
+              <p class="svc-box-desc" data-i18n="services.card_0_desc">Lincah dan efisien untuk pengiriman kargo ringan serta distribusi cepat area perkotaan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1: Medium -->
+        <div class="phone-card" data-pos="right1" data-index="1">
+          <div class="phone-shell service-box">
+            <div class="svc-box-img">
+              <img src="images/medium.png" alt="Medium Truck" loading="lazy" />
+            </div>
+            <div class="svc-box-body">
+              <h3 class="svc-box-title" data-i18n="services.card_1_title">Medium Truck</h3>
+              <p class="svc-box-desc" data-i18n="services.card_1_desc">Daya angkut optimal untuk distribusi material industri, logistik retail, dan rute antarkota.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2: Heavy -->
+        <div class="phone-card" data-pos="right2" data-index="2">
+          <div class="phone-shell service-box">
+            <div class="svc-box-img">
+              <img src="images/heavy.png" alt="Heavy Cargo" loading="lazy" />
+            </div>
+            <div class="svc-box-body">
+              <h3 class="svc-box-title" data-i18n="services.card_2_title">Heavy Cargo</h3>
+              <p class="svc-box-desc" data-i18n="services.card_2_desc">Kapasitas maksimal untuk muatan besar jarak jauh, wingbox, kontainer, dan rantai pasok industri.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3: Cold -->
+        <div class="phone-card" data-pos="left1" data-index="3">
+          <div class="phone-shell service-box">
+            <div class="svc-box-img">
+              <img src="images/cold.png" alt="Cold Chain" loading="lazy" />
+            </div>
+            <div class="svc-box-body">
+              <h3 class="svc-box-title" data-i18n="services.card_3_title">Cold Chain</h3>
+              <p class="svc-box-desc" data-i18n="services.card_3_desc">Armada berpendingin khusus dengan kontrol suhu untuk produk beku, farmasi, &amp; makanan segar.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:center;gap:24px;width:100%;margin-top:48px;">
+      <button class="carousel-btn" id="carouselPrev" aria-label="Previous screen">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <div class="carousel-dots" id="carouselDots"></div>
+      <button class="carousel-btn" id="carouselNext" aria-label="Next screen">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ── 4. TRANSPORT & DRIVER SOLUTIONS ── -->
+  <section class="solutions-section" id="solutions">
+    <div class="container">
+      <div class="features-header">
+        <div class="section-label reveal" data-i18n="solutions.label">Solusi Terpadu</div>
+        <h2 class="section-title reveal reveal-delay-1" data-i18n-html="solutions.title">Solusi Transportasi Darat &amp;<br><em>Manajemen Pengemudi Handal</em></h2>
+        <p class="section-sub reveal reveal-delay-2" data-i18n="solutions.sub">Menggabungkan eksekusi transportasi presisi dengan manajemen armada mutakhir untuk efisiensi maksimal di jalan.</p>
+      </div>
+
+      <div class="solutions-grid">
+        <!-- Solution 1: Land Transportation -->
+        <div class="solution-box reveal">
+          <div>
+            <div class="solution-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="solution-title" data-i18n="solutions.land_title">Land Transportation</h3>
+            <p class="solution-desc" data-i18n="solutions.land_desc">
+              Kami menggabungkan eksekusi transportasi dengan layanan manajemen transportasi untuk memenuhi segala kebutuhan Anda di jalan raya. Melalui jaringan pusat kendali dan teknologi mutakhir, kami memantau pengiriman di sepanjang rute serta memastikan kargo Anda selalu menempuh rute paling efisien. Solusi transportasi darat kami menyediakan berbagai tipe truk didukung suspensi udara (air suspension), pemantauan rute real-time, serta truk berpendingin (temperature controlled).
+            </p>
+          </div>
+          <div class="solution-tags">
+            <span class="solution-tag" data-i18n="solutions.tag_control_tower">Pusat Kendali</span>
+            <span class="solution-tag" data-i18n="solutions.tag_monitoring">Pemantauan Real-Time</span>
+            <span class="solution-tag" data-i18n="solutions.tag_air_susp">Air Suspension</span>
+            <span class="solution-tag" data-i18n="solutions.tag_temp_ctrl">Temperature Controlled</span>
+            <span class="solution-tag" data-i18n="solutions.tag_route_opt">Rute Paling Efisien</span>
+            <span class="solution-tag" data-i18n="solutions.tag_global_net">Jaringan Luas</span>
+          </div>
+        </div>
+
+        <!-- Solution 2: Driver Management -->
+        <div class="solution-box reveal reveal-delay-1">
+          <div>
+            <div class="solution-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="solution-title" data-i18n="solutions.driver_title">Driver Management</h3>
+            <p class="solution-desc" data-i18n="solutions.driver_desc">
+              Mengelola pengemudi armada secara efektif mampu menghemat biaya operasional perusahaan secara signifikan setiap tahunnya. Melalui pelatihan pengemudi profesional, sistem telematika canggih, dan manajemen bahan bakar yang terukur, armada dapat memangkas biaya dan jarak tempuh tanpa mengurangi standar layanan. Kami menerapkan prosedur terstruktur mulai dari pemeriksaan lisensi, penilaian risiko (risk assessment), hingga pelatihan economic driving dan pemilihan rute terbaik.
+            </p>
+          </div>
+          <div class="solution-tags">
+            <span class="solution-tag" data-i18n="solutions.tag_driver_training">Driver Training</span>
+            <span class="solution-tag" data-i18n="solutions.tag_telematics">Telematics Systems</span>
+            <span class="solution-tag" data-i18n="solutions.tag_fuel_mgmt">Fuel Management</span>
+            <span class="solution-tag" data-i18n="solutions.tag_eco_driving">Economic Driving</span>
+            <span class="solution-tag" data-i18n="solutions.tag_licence_check">Licence Checks</span>
+            <span class="solution-tag" data-i18n="solutions.tag_risk_assess">Risk Assessments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 5. BIAYA / PRICING ARMADA CDE & CDD ── -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="pricing-header">
+        <div class="section-label reveal" data-i18n="pricing.label">Skema Biaya &amp; Tarif</div>
+        <h2 class="section-title reveal reveal-delay-1" data-i18n-html="pricing.title">Tarif Armada &amp; <em>Biaya Multi-Drop</em></h2>
+        <p class="section-sub reveal reveal-delay-2" data-i18n="pricing.sub">
+          Transparan dan hemat. Drop pertama selalu GRATIS! Nikmati tarif tambahan multi-drop terjangkau untuk Truk CDE dan CDD.
+        </p>
+      </div>
+
+      <!-- Free First Drop Announcement Banner -->
+      <div class="pricing-promo-banner reveal">
+        <div class="promo-badge" data-i18n="pricing.promo_badge">PROMO HEMAT</div>
+        <div class="promo-text" data-i18n-html="pricing.promo_text">
+          <strong>Drop ke-1 GRATIS!</strong> Hanya dikenakan biaya tambahan ekonomis untuk titik drop ke-2 dan seterusnya (&gt;1 drop).
+        </div>
+      </div>
+
+      <div class="pricing-truck-grid">
+        <!-- Truk CDE (Colt Diesel Engkel) -->
+        <div class="pricing-truck-card reveal">
+          <div class="truck-card-header">
+            <span class="truck-type-pill" data-i18n="pricing.cde_pill">4 Roda · Engkel</span>
+            <h3 class="truck-card-title" data-i18n="pricing.cde_title">Truk CDE (Colt Diesel Engkel)</h3>
+            <p class="truck-card-desc" data-i18n="pricing.cde_desc">Truk kecil dengan kelincahan optimal untuk distribusi kargo perkotaan, rute jalan sempit, dan pengiriman multi-titik.</p>
+          </div>
+
+          <div class="truck-pricing-highlight">
+            <div class="pricing-drop-main">
+              <span class="drop-label" data-i18n="pricing.drop1_label">Drop ke-1</span>
+              <span class="drop-cost free" data-i18n="pricing.drop_free">GRATIS</span>
+            </div>
+            <div class="pricing-drop-sub">
+              <span class="drop-next-label" data-i18n="pricing.cde_next_label">&gt;1 Drop (Drop ke-2 dst)</span>
+              <span class="drop-next-price">Rp 15.000 <small data-i18n="pricing.per_drop">/ drop</small></span>
+            </div>
+          </div>
+
+          <div class="truck-specs-box">
+            <div class="truck-spec-row">
+              <span class="spec-name" data-i18n="pricing.spec_wheels">Jumlah Roda</span>
+              <span class="spec-val" data-i18n="pricing.cde_wheels">4 Roda (2 Depan, 2 Belakang)</span>
+            </div>
+            <div class="truck-spec-row">
+              <span class="spec-name" data-i18n="pricing.spec_axle">Konfigurasi Gandar</span>
+              <span class="spec-val" data-i18n="pricing.cde_axle">1 Sumbu Gandar Tunggal</span>
+            </div>
+            <div class="truck-spec-row">
+              <span class="spec-name" data-i18n="pricing.spec_capacity">Kapasitas Muatan</span>
+              <span class="spec-val" data-i18n="pricing.cde_capacity">1 s.d. 2,5 Ton (hingga 2 Ton)</span>
+            </div>
+            <div class="truck-spec-row">
+              <span class="spec-name" data-i18n="pricing.spec_use">Kebutuhan Cocok</span>
+              <span class="spec-val" data-i18n="pricing.cde_use">Distribusi Retail, UMKM &amp; FMCG</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary truck-cta" data-i18n="pricing.cta_cde">Pesan Truk CDE</a>
+        </div>
+
+        <!-- Truk CDD (Colt Diesel Double) -->
+        <div class="pricing-truck-card featured reveal reveal-delay-1">
+          <div class="pricing-badge" data-i18n="pricing.cdd_badge">Kapasitas Muatan Besar</div>
+          <div class="truck-card-header">
+            <span class="truck-type-pill cdd" data-i18n="pricing.cdd_pill">6 Roda · Double</span>
+            <h3 class="truck-card-title" data-i18n="pricing.cdd_title">Truk CDD (Colt Diesel Double)</h3>
+            <p class="truck-card-desc" data-i18n="pricing.cdd_desc">Truk berkapasitas besar dengan ban ganda gandar belakang untuk tonase berat dan pengiriman volume skala industri.</p>
+          </div>
+
+          <div class="truck-pricing-highlight">
+            <div class="pricing-drop-main">
+              <span class="drop-label" data-i18n="pricing.drop1_label">Drop ke-1</span>
+              <span class="drop-cost free" data-i18n="pricing.drop_free">GRATIS</span>
+            </div>
+            <div class="pricing-drop-sub">
+              <span class="drop-next-label" data-i18n="pricing.cdd_next_label">&gt;1 Drop (Drop ke-2 dst)</span>
+              <span class="drop-next-price">Rp 20.000 <small data-i18n="pricing.per_drop">/ drop</small></span>
+            </div>
+          </div>
+
+          <div class="truck-specs-box">
+            <div class="truck-spec-row">
+              <span class="spec-name" data-i18n="pricing.spec_wheels">Jumlah Roda</span>
+              <span class="spec-val" data-i18n="pricing.cdd_wheels">6 Roda (2 Depan, 4 Belakang)</span>
+            </div>
+            <div class="truck-spec-row">
+              <span class="spec-name" data-i18n="pricing.spec_axle">Konfigurasi Gandar</span>
+              <span class="spec-val" data-i18n="pricing.cdd_axle">Ban Ganda Gandar Belakang</span>
+            </div>
+            <div class="truck-spec-row">
+              <span class="spec-name" data-i18n="pricing.spec_capacity">Kapasitas Muatan</span>
+              <span class="spec-val" data-i18n="pricing.cdd_capacity">4 s.d. 7 Ton (hingga 5–7 Ton)</span>
+            </div>
+            <div class="truck-spec-row">
+              <span class="spec-name" data-i18n="pricing.spec_use">Kebutuhan Cocok</span>
+              <span class="spec-val" data-i18n="pricing.cdd_use">Kargo Industri, Pabrik &amp; Antarkota</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary truck-cta" data-i18n="pricing.cta_cdd">Pesan Truk CDD</a>
+        </div>
+      </div>
+
+      <!-- Comparison Info Box -->
+      <div class="cde-cdd-info-box reveal">
+        <div class="info-box-header">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <strong data-i18n="pricing.diff_title">Perbedaan Utama CDE dan CDD:</strong>
+        </div>
+        <p class="info-box-text" data-i18n-html="pricing.diff_text">
+          <strong>Jumlah Roda:</strong> CDE memiliki 4 roda (sumbu gandar tunggal) sedangkan CDD memiliki 6 roda dengan ban ganda pada sumbu gandar belakang. <br>
+          <strong>Kapasitas Muatan:</strong> CDE mampu membawa beban sekitar 1 hingga 2,5 ton, sedangkan CDD mampu membawa beban lebih berat berkisar antara 4 hingga 7 ton.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 6. STATS ── -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-rule"></div>
+          <div class="stat-value"><span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span></div>
+          <div class="stat-label" data-i18n="stats.s1_label">Kepatuhan Standar Mutu</div>
+          <div class="stat-sublabel" data-i18n="stats.s1_sub">Standar resmi operasional terpadu</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-rule"></div>
+          <div class="stat-value"><span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span></div>
+          <div class="stat-label" data-i18n="stats.s2_label">Pemantauan Armada</div>
+          <div class="stat-sublabel" data-i18n="stats.s2_sub">Pemantauan armada &amp; suhu real-time</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-rule"></div>
+          <div class="stat-value"><span class="stat-num" data-target="99" data-decimal="8">0</span><span class="stat-suffix">%</span></div>
+          <div class="stat-label" data-i18n="stats.s3_label">Ketepatan Waktu SLA</div>
+          <div class="stat-sublabel" data-i18n="stats.s3_sub">Performa rute teruji &amp; terpercaya</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-rule"></div>
+          <div class="stat-value"><span class="stat-num" data-target="100">0</span><span class="stat-suffix">+</span></div>
+          <div class="stat-label" data-i18n="stats.s4_label">Armada Truk Modern</div>
+          <div class="stat-sublabel" data-i18n="stats.s4_sub">Suspensi udara &amp; cold chain siap jalan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 6. HALAL COMMITMENT (SJPH BPJPH) ── -->
+  <section class="halal-section" id="halal">
+    <div class="container">
+      <div class="features-header">
+        <div class="section-label reveal" data-i18n="halal.label">Jaminan Mutu &amp; Kepatuhan</div>
+        <h2 class="section-title reveal reveal-delay-1" data-i18n-html="halal.title">Komitmen Kebijakan Halal<br><em>Sistem Jaminan Produk Halal (SJPH)</em></h2>
+        <p class="section-sub reveal reveal-delay-2" data-i18n="halal.sub">
+          Memastikan integritas halal dari hulu hingga hilir sesuai standar Badan Penyelenggara Jaminan Produk Halal (BPJPH).
+        </p>
+      </div>
+
+      <!-- Halal Pledge Box -->
+      <div class="halal-pledge-box reveal">
+        <p class="halal-pledge-text" data-i18n="halal.pledge_text">
+          "Manajemen dan seluruh karyawan PT. Gagas Logistik Indonesia berkomitmen dan bertanggung jawab dalam memastikan pemenuhan persyaratan Sistem Jaminan Produk Halal (SJPH) secara konsisten dan berkesinambungan dengan melakukan tindakan sebagai berikut:"
+        </p>
+      </div>
+
+      <!-- 5 SJPH Commitments Grid -->
+      <div class="halal-grid">
+        <!-- Item 1 -->
+        <div class="halal-card reveal">
+          <div class="halal-card-head">
+            <div class="halal-card-num">01</div>
+            <h3 class="halal-card-title" data-i18n="halal.c1_title">Kepatuhan Peraturan BPJPH</h3>
+          </div>
+          <p class="halal-card-desc" data-i18n="halal.c1_desc">
+            Mematuhi peraturan perundangan yang terkait dan memenuhi persyaratan sertifikasi produk halal yang ditetapkan oleh Badan Penyelenggara Jaminan Produk Halal (BPJPH).
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="halal-card reveal reveal-delay-1">
+          <div class="halal-card-head">
+            <div class="halal-card-num">02</div>
+            <h3 class="halal-card-title" data-i18n="halal.c2_title">Jaminan Produk &amp; Bahan Halal</h3>
+          </div>
+          <p class="halal-card-desc" data-i18n="halal.c2_desc">
+            Menjamin semua bahan dan produk yang kami distribusikan halal, bebas dari kontaminasi silang, dan selalu higienis selama proses pengangkutan.
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="halal-card reveal reveal-delay-2">
+          <div class="halal-card-head">
+            <div class="halal-card-num">03</div>
+            <h3 class="halal-card-title" data-i18n="halal.c3_title">Penyediaan Sumber Daya Memadai</h3>
+          </div>
+          <p class="halal-card-desc" data-i18n="halal.c3_desc">
+            Menyediakan sumber daya yang memadai dalam rangka penyusunan, penerapan, dan perbaikan yang berkelanjutan dari Sistem Jaminan Produk Halal (SJPH).
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="halal-card reveal reveal-delay-1">
+          <div class="halal-card-head">
+            <div class="halal-card-num">04</div>
+            <h3 class="halal-card-title" data-i18n="halal.c4_title">Pelatihan &amp; Kompetensi SDM</h3>
+          </div>
+          <p class="halal-card-desc" data-i18n="halal.c4_desc">
+            Melakukan pembinaan sumber daya manusia melalui pelatihan dan/atau peningkatan kompetensi di bidang halal sesuai dengan kebutuhan operasional.
+          </p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="halal-card reveal reveal-delay-2">
+          <div class="halal-card-head">
+            <div class="halal-card-num">05</div>
+            <h3 class="halal-card-title" data-i18n="halal.c5_title">Sosialisasi Kebijakan Halal</h3>
+          </div>
+          <p class="halal-card-desc" data-i18n="halal.c5_desc">
+            Melakukan sosialisasi Kebijakan Halal kepada semua pihak yang terkait (internal dan eksternal) untuk memastikan semua personel menjaga integritas halal di perusahaan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 7. VISION & MISSION ── -->
+  <section class="vision-section" id="about">
+    <div class="container">
+      <div class="features-header">
+        <div class="section-label reveal" data-i18n="vision.label">Tentang Kami</div>
+        <h2 class="section-title reveal reveal-delay-1" data-i18n-html="vision.title">Fondasi Kuat untuk Pertumbuhan<br><em>Visi &amp; Misi Perusahaan</em></h2>
+        <p class="section-sub reveal reveal-delay-2" data-i18n="vision.sub">
+          Menjadi rujukan terdepan dalam industri logistik global dan mitra paling terpercaya bagi perkembangan bisnis Anda.
+        </p>
+      </div>
+
+      <!-- Quote Banner -->
+      <div class="quote-banner reveal">
+        <p class="quote-banner-text" data-i18n-html="vision.quote_text">
+          "Logistik merupakan tulang punggung perdagangan global dan memainkan peran penting dalam setiap aspek kehidupan kita sehari-hari. Dengan komitmen ini, ambisi kami adalah menjadikan Gagas Logistik referensi terdepan yang tak terbantahkan di industri logistik. <em>Dengan melakukan yang terbaik, kami memampukan bisnis untuk tumbuh dan komunitas untuk berkembang.</em>"
+        </p>
+      </div>
+
+      <!-- Vision & Mission Grid -->
+      <div class="vm-grid">
+        <!-- Vision -->
+        <div class="vm-card reveal">
+          <span class="vm-badge" data-i18n="vision.vision_badge">Visi Kami</span>
+          <h3 class="vm-title" data-i18n="vision.vision_title">Vision</h3>
+          <div class="vm-list">
+            <div class="vm-item">
+              <div class="vm-item-dot"></div>
+              <span data-i18n="vision.v1">Menjadikan kepercayaan dan kepuasan pelanggan sebagai prioritas utama (To make customer trust and satisfaction our top priorities).</span>
+            </div>
+            <div class="vm-item">
+              <div class="vm-item-dot"></div>
+              <span data-i18n="vision.v2">Menjadi Transporter yang sukses dan terdepan di Indonesia (To become a successful Transporter in Indonesia).</span>
+            </div>
+            <div class="vm-item">
+              <div class="vm-item-dot"></div>
+              <span data-i18n="vision.v3">Menjadi perusahaan yang dihormati oleh pelanggan, karyawan, dan pemegang saham (To become a respected company for its customers, employees, and shareholders).</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="vm-card reveal reveal-delay-1">
+          <span class="vm-badge" data-i18n="vision.mission_badge">Misi Kami</span>
+          <h3 class="vm-title" data-i18n="vision.mission_title">Mission</h3>
+          <div class="vm-list">
+            <div class="vm-item">
+              <div class="vm-item-dot"></div>
+              <span data-i18n="vision.m1">Menjadi Transporter dengan pertumbuhan tercepat di Indonesia dengan penekanan pada kepuasan pelanggan, pertumbuhan berkelanjutan, dan manajemen yang solid (To become the fastest growing Transporter in Indonesia with the emphasis on customer satisfaction, sustainable growth, and solid management).</span>
+            </div>
+            <div class="vm-item">
+              <div class="vm-item-dot"></div>
+              <span data-i18n="vision.m2">Menciptakan nilai tambah dengan menghadirkan solusi rantai pasok end-to-end yang menjawab kebutuhan bisnis pelanggan yang paling kompleks dan dinamis.</span>
+            </div>
+            <div class="vm-item">
+              <div class="vm-item-dot"></div>
+              <span data-i18n="vision.m3">Membangun kemitraan jangka panjang yang kokoh berlandaskan keahlian internasional dan pemahaman mendalam atas pasar lokal Indonesia.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 8. FAQ ── -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-inner">
+        <div class="faq-sidebar reveal">
+          <div class="section-label" data-i18n="faq.label">FAQ</div>
+          <h2 class="section-title" data-i18n-html="faq.title">Pertanyaan yang<br><em>sering diajukan</em></h2>
+          <p class="section-sub" data-i18n="faq.sub">Tidak menemukan yang Anda cari? Hubungi kami di admin@gagaslogistik.com — kami merespons dalam 2 jam.</p>
+          <button class="faq-toggle-all" id="faqToggleAll">
+            <span id="faqToggleIcon">+</span> <span id="faqToggleText" data-i18n="faq.expand_all">Buka semua</span></button>
+        </div>
+        <div class="faq-list reveal reveal-delay-1" id="faqList">
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              <span data-i18n="faq.q1">Bagaimana komitmen mutu dan kepatuhan SJPH di Gagas Logistik?</span>
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n-html="faq.a1">Manajemen dan seluruh staf berkomitmen konsisten menerapkan Sistem Jaminan Produk (SJPH) sesuai standar BPJPH, menjamin semua produk yang didistribusikan higienis, bebas kontaminasi, dan ditangani oleh personel terlatih dan kompeten.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              <span data-i18n="faq.q2">Apa saja keunggulan layanan Land Transportation Gagas Logistik?</span>
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n-html="faq.a2">Kami mengombinasikan eksekusi pengiriman dengan manajemen pusat kendali terpadu, armada bersuspensi udara (air suspension), pemantauan rute real-time, dan rute tercepat untuk efisiensi biaya maksimal.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              <span data-i18n="faq.q3">Bagaimana ketentuan biaya multi-drop untuk Truk CDE dan CDD?</span>
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n-html="faq.a3">Drop ke-1 selalu <strong>GRATIS</strong>! Untuk drop ke-2 dan seterusnya (&gt;1 drop), Truk CDE (4 roda, beban hingga 2 ton) dikenakan <strong>Rp 15.000/drop</strong>, dan Truk CDD (6 roda, beban hingga 5–7 ton) dikenakan <strong>Rp 20.000/drop</strong>.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              <span data-i18n="faq.q4">Apakah tersedia armada truk berpendingin (Cold Chain)?</span>
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n-html="faq.a4">Ya, kami menyediakan truk dengan pengatur suhu (temperature controlled) berteknologi tinggi untuk pengiriman produk beku, bahan farmasi, dan hasil pangan segar dengan pemantauan suhu real-time.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              <span data-i18n="faq.q5">Bagaimana cara memantau status pengiriman kargo kami?</span>
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n-html="faq.a5">Seluruh armada terhubung dengan sistem telematika terpadu, memungkinkan pemantauan rute secara langsung dan penyampaian bukti pengiriman digital secara transparan.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              <span data-i18n="faq.q6">Bagaimana cara memesan layanan atau bermitra dengan Gagas Logistik?</span>
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner" data-i18n-html="faq.a6">Anda dapat langsung menghubungi kami melalui telepon di <strong>021-89453378</strong>, melihat lokasi kantor di Google Maps, atau mengirimkan detail kebutuhan kargo Anda via email ke <strong>admin@gagaslogistik.com</strong>.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 11. CONTACT US ── -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-content">
+          <div class="cta-label" data-i18n="contact.label">✦ Hubungi Kami</div>
+          <h2 class="cta-title" data-i18n-html="contact.title">Siap Mengirim Kargo Anda?<br><em>Hubungi Kami Sekarang</em></h2>
+          <p class="cta-sub" data-i18n="contact.sub">Gagas Logistik siap melayani kebutuhan transportasi dan kargo Anda secara cepat, aman, dan terpercaya. Hubungi kami melalui telepon, kunjungi lokasi, atau kirim email.</p>
+        </div>
+        <div class="cta-actions contact-actions">
+          <!-- 1: Phone Button (Copies 021-89453378 to clipboard, shows Copied for 2s) -->
+          <button type="button" class="btn-contact-action btn-contact-phone" id="copyPhoneBtn" aria-label="Copy phone number 021-89453378">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span id="copyPhoneText">021-89453378</span>
+          </button>
+
+          <!-- 2: Maps Button -->
+          <a href="https://maps.app.goo.gl/epmcge5MAg59hdKo8" target="_blank" rel="noopener noreferrer" class="btn-contact-action btn-contact-maps" aria-label="Open location in Google Maps">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span data-i18n="contact.maps">Google Maps</span>
+            <span class="btn-ext-icon">↗</span>
+          </a>
+
+          <!-- 3: Email Button -->
+          <a href="mailto:admin@gagaslogistik.com" class="btn-contact-action btn-contact-email" aria-label="Send email to admin@gagaslogistik.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>admin@gagaslogistik.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 12. FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Gagas<span> Logistik</span></a>
+          <p class="footer-brand-desc" data-i18n="footer.brand_desc">Solusi logistik dan manajemen kargo terpadu untuk tim yang ingin fokus pada perkembangan bisnis.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Twitter / X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="TikTok">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-label" data-i18n="footer.col_product">Navigasi</div>
+          <div class="footer-links">
+            <a href="#services" data-i18n="footer.link_services">Layanan Armada</a>
+            <a href="#pricing" data-i18n="footer.link_pricing">Tarif &amp; Biaya Multi-Drop</a>
+            <a href="#solutions" data-i18n="footer.link_solutions">Solusi Transportasi</a>
+            <a href="#halal" data-i18n="footer.link_halal">Komitmen Halal SJPH</a>
+            <a href="#about" data-i18n="footer.link_about">Visi &amp; Misi</a>
+            <a href="#faq" data-i18n="footer.link_faq">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-label" data-i18n="footer.col_company">Perusahaan</div>
+          <div class="footer-links">
+            <a href="#" data-i18n="footer.link_about">Tentang Kami</a>
+            <a href="#" data-i18n="footer.link_blog">Blog</a>
+            <a href="#" data-i18n="footer.link_careers">Karir</a>
+            <a href="#" data-i18n="footer.link_press">Media Kit</a>
+            <a href="#" data-i18n="footer.link_status">Status Layanan</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-label" data-i18n="footer.col_support">Bantuan</div>
+          <div class="footer-links">
+            <a href="#" data-i18n="footer.link_help">Pusat Bantuan</a>
+            <a href="#" data-i18n="footer.link_docs">Dokumentasi</a>
+            <a href="#" data-i18n="footer.link_security">Keamanan</a>
+            <a href="#contact" data-i18n="footer.link_contact">Hubungi Kami</a>
+            <a href="#" data-i18n="footer.link_community">Komunitas</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy" data-i18n-html="footer.copy">
+          © 2026 Gagas Logistik Indonesia. Hak Cipta Dilindungi.
+        </div>
+        <div class="footer-legal">
+          <a href="#" data-i18n="footer.privacy">Kebijakan Privasi</a>
+          <a href="#" data-i18n="footer.terms">Ketentuan Layanan</a>
+          <a href="#" data-i18n="footer.cookie">Kebijakan Cookie</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
