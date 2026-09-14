@@ -370,7 +370,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         "hero.trust_1": "Standar Layanan Unggul",
         "hero.trust_2": "99.8% Ketepatan Waktu SLA",
         "hero.db_title": "Pusat Kendali Operasional",
-        "hero.db_tag": "Aktif Beroperasi",
         "hero.stat_1_label": "Kepatuhan Standar Armada",
         "hero.stat_2_label": "Pengawasan Operasional",
         "hero.stat_3_label": "Efisiensi Rute",
